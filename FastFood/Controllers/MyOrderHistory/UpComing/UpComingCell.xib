@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UpComingCell" rowHeight="111" id="KGk-i7-Jjw" customClass="UpComingCell" customModule="FastFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msa-ds-AEq">
+                        <rect key="frame" x="20" y="8" width="349" height="93"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorities-4" translatesAutoresizingMaskIntoConstraints="NO" id="6U4-f9-BRi">
+                                <rect key="frame" x="20" y="16.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OlD-PJ-Dgk"/>
+                                    <constraint firstAttribute="width" constant="60" id="ajn-l1-mOZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEh-qj-vm4">
+                                <rect key="frame" x="88" y="20.5" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wabi Sabi Retaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtM-7m-wqj">
+                                <rect key="frame" x="88" y="44" width="114.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqx-hw-o0t">
+                                <rect key="frame" x="88" y="64" width="43" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.81176470590000005" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CI-JP-uOc">
+                                <rect key="frame" x="314.5" y="24" width="26.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.81176470590000005" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xqx-hw-o0t" firstAttribute="leading" secondItem="6U4-f9-BRi" secondAttribute="trailing" constant="8" id="GeC-Ub-tj6"/>
+                            <constraint firstItem="6U4-f9-BRi" firstAttribute="centerY" secondItem="msa-ds-AEq" secondAttribute="centerY" id="Lac-Aq-Qsc"/>
+                            <constraint firstItem="2CI-JP-uOc" firstAttribute="centerY" secondItem="BEh-qj-vm4" secondAttribute="centerY" id="UC6-Re-f3Z"/>
+                            <constraint firstItem="BEh-qj-vm4" firstAttribute="top" secondItem="6U4-f9-BRi" secondAttribute="top" constant="4" id="UuP-yO-IF7"/>
+                            <constraint firstAttribute="trailing" secondItem="2CI-JP-uOc" secondAttribute="trailing" constant="8" id="Y7T-gF-Mg8"/>
+                            <constraint firstItem="6U4-f9-BRi" firstAttribute="leading" secondItem="msa-ds-AEq" secondAttribute="leading" constant="20" id="ged-Om-nEQ"/>
+                            <constraint firstItem="EtM-7m-wqj" firstAttribute="top" secondItem="BEh-qj-vm4" secondAttribute="bottom" constant="2.5" id="hr8-On-Nqr"/>
+                            <constraint firstItem="EtM-7m-wqj" firstAttribute="leading" secondItem="6U4-f9-BRi" secondAttribute="trailing" constant="8" id="lBA-57-ZgA"/>
+                            <constraint firstItem="BEh-qj-vm4" firstAttribute="leading" secondItem="6U4-f9-BRi" secondAttribute="trailing" constant="8" id="siu-Ov-Gz1"/>
+                            <constraint firstItem="Xqx-hw-o0t" firstAttribute="top" secondItem="EtM-7m-wqj" secondAttribute="bottom" constant="5.5" id="ttm-Cs-qdH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="msa-ds-AEq" secondAttribute="bottom" constant="10" id="AAN-GW-0oK"/>
+                    <constraint firstItem="msa-ds-AEq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="U58-4U-h12"/>
+                    <constraint firstAttribute="trailing" secondItem="msa-ds-AEq" secondAttribute="trailing" constant="20" id="WF9-OK-n50"/>
+                    <constraint firstItem="msa-ds-AEq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ixS-Kb-4rJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mainView" destination="msa-ds-AEq" id="1tt-YA-cZf"/>
+            </connections>
+            <point key="canvasLocation" x="255.79710144927537" y="84.709821428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="favorities-4" width="211" height="211"/>
+    </resources>
+</document>
